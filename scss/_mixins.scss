@@ -1,0 +1,21 @@
+// Mixin
+@mixin button_arrow {
+  display: inline-block;
+  // border-radius: 2em;
+  position: relative;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  background-color: $tertiaryColor;
+  color: #fff;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid white;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+}
