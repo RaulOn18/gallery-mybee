@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(../img/background-right.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 40vmax;
+}
+body::before {
+  content: "";
+  background-image: url(../img/background-left.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 50vmax;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-position-y: 5em;
+}
+@media screen and (max-width: 992px) {
+  body::before {
+    opacity: 0.4;
+  }
+}
+
+.custom-nav .navbar-brand span {
+  color: #6e82c7;
+  font-style: normal;
+  font-weight: 750;
+  font-size: 1.8rem;
+  line-height: 27px;
+  transition: all 0.3s ease 0s;
+}
+.custom-nav .navbar-brand span:hover {
+  color: #2b3b71;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+  color: #6e82c7;
+  font-weight: 600;
+  margin-left: 2.3em;
+  transition: all 0.3s ease 0s;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link:hover {
+  color: #2b3b71;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link .d-flex .form-control {
+  width: 150px;
+  height: 25px;
+  opacity: 70%;
+  border-radius: 2em;
+  border: none;
+  transition: all 0.3s ease 0s;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link .d-flex .form-control:hover {
+  opacity: 100%;
+}
+
+.custom-section {
+  margin-top: 10em;
+  position: relative;
+  justify-content: end;
+  text-align: end;
+  z-index: 100;
+}
+.custom-section .col-12 h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #8094d3;
+}
+.custom-section .col-12 span {
+  color: #ff8ec6;
+}
+.custom-section .col-12 p {
+  color: #525252;
+}
+.custom-section .col-12 a {
+  margin-top: 0.5em;
+  display: inline-block;
+  position: relative;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  background-color: #ff8ec6;
+  color: #fff;
+  transition: 0.5s ease;
+}
+.custom-section .col-12 a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+.custom-section .col-12 a:hover {
+  background-color: #f40079;
+}
+@media screen and (max-width: 992px) {
+  .custom-section {
+    margin-top: 3em;
+    text-align: center;
+  }
+  .custom-section h2,
+.custom-section h3,
+.custom-section p {
+    text-shadow: 1px 1px 2px rgba(82, 82, 82, 0.4);
+  }
+}
+
+.container .custom-section2 .col {
+  margin-top: 10em;
+  margin-bottom: 10px;
+}
+.container .custom-section2 .col .header-about {
+  font-family: "Pacifico", cursive;
+  color: #6e82c7;
+}
+
+.container .header-list-menu .col h1 {
+  color: #6e82c7;
+  font-family: "Pacifico", cursive;
+}
+
+.container #list-menu .card .card-img-top {
+  border-radius: 5%;
+}/*# sourceMappingURL=main.css.map */
